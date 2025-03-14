@@ -100,7 +100,21 @@ curl --request POST \
 }'
 ```
 
-## To create a productrl --request POST \
+## To create a product
+
+```
+curl --request POST \
+  --url http://localhost:3000/products \
+  --header 'Content-Type: application/json' \
+  --header 'accept: application/json' \
+  --data '{
+		"nome":"a",
+		"categoria":"b",
+		"descricao":"c",
+		"preco": 1,
+		"quantidade_estoque": 1
+	}'
+```
 
 ## Resources
 
